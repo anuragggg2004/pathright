@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your PathReport | PathRight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="nav container">
+    <a href="index.html" class="logo">Path<span class="text-accent">Right</span></a>
+  </div>
+
+  <main class="container">
+    <div class="result-hero">
+      <h1>Your <span class="text-accent">PathReport</span></h1>
+    </div>
+
+    <!-- 1. Key Insight -->
+    <section class="result-section" style="animation-delay: 0.1s;">
+      <div class="key-insight-card">
+        <h3>Key Insight</h3>
+        <p id="el-key-insight">Loading...</p>
+      </div>
+    </section>
+
+    <!-- 2. Profile Summary -->
+    <section class="result-section" style="animation-delay: 0.2s;">
+      <h2 class="section-title">Profile Summary</h2>
+      <p id="el-profile-summary" style="font-size: 1.1rem; line-height: 1.7; color: #d0d0d0;">Loading...</p>
+    </section>
+
+    <!-- 3. Strengths & Gaps -->
+    <section class="result-section grid-2" style="animation-delay: 0.3s;">
+      <div>
+        <h2 class="section-title">Your Strengths</h2>
+        <ul class="bullet-list" id="el-strengths"></ul>
+      </div>
+      <div>
+        <h2 class="section-title">Gaps to Watch</h2>
+        <ul class="bullet-list gaps-list" id="el-gaps"></ul>
+      </div>
+    </section>
+
+    <!-- 4. Career Paths -->
+    <section class="result-section" style="animation-delay: 0.4s;">
+      <h2 class="section-title">Top 3 Career Paths</h2>
+      <div class="grid-3" id="el-careers">
+        <!-- Injected via js -->
+      </div>
+    </section>
+
+    <!-- 5. College Recommendations -->
+    <section class="result-section" style="animation-delay: 0.5s;">
+      <h2 class="section-title">Top College Recommendations</h2>
+      <div class="college-list" id="el-colleges">
+        <!-- Injected via js -->
+      </div>
+    </section>
+
+    <!-- 6. Emerging Roles -->
+    <section class="result-section" style="animation-delay: 0.6s;">
+      <h2 class="section-title">Emerging Roles to Explore</h2>
+      <div class="grid-2" id="el-emerging">
+        <!-- Injected via js -->
+      </div>
+    </section>
+
+    <!-- 7. Next 30 Days -->
+    <section class="result-section" style="animation-delay: 0.7s;">
+      <h2 class="section-title">Your Next 30 Days</h2>
+      <ul class="action-list" id="el-actions">
+        <!-- Injected via js -->
+      </ul>
+    </section>
+
+    <!-- 8. Chatbot Section -->
+    <section class="result-section" style="animation-delay: 0.8s;">
+      <div class="card chat-container">
+        <div class="chat-header">
+          <h2 class="section-title" style="margin-bottom:0.2rem;">Still have questions? Ask your counsellor.</h2>
+          <p style="color:var(--muted); font-size:0.95rem; margin-bottom:1.5rem;">Your PathReport is already loaded — ask anything and get answers specific to your profile.</p>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+          <!-- Messages go here -->
+          <div class="chat-bubble ai-bubble">
+            I've reviewed your PathReport. Ask me anything — about your college options, what entrance exams to focus on, career doubts, or anything you forgot to mention earlier.
+          </div>
+        </div>
+
+        <div class="chat-chips" id="chat-chips">
+          <button class="chip">What if I also like design?</button>
+          <button class="chip">Which college is most realistic for me?</button>
+          <button class="chip">What should I do in the next 6 months?</button>
+          <button class="chip">I forgot to mention something — does it change anything?</button>
+        </div>
+
+        <div class="chat-input-area">
+          <textarea id="chat-input" placeholder="Type your question here..."></textarea>
+          <button id="chat-send" class="btn-send">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align: center; margin-bottom: 6rem;">
+      <hr style="border: 0; border-top: 1px solid var(--border); margin-bottom: 3rem;">
+      <a href="form.html" class="btn">Start a New Assessment</a>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

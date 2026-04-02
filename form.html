@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PathRight — Diagnostic Flow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="nav container">
+    <a href="index.html" class="logo">Path<span class="text-accent">Right</span></a>
+  </div>
+
+  <div class="form-hero">
+    <h1>Tell us about yourself</h1>
+    <p>Phase 1: Just the baseline.</p>
+  </div>
+
+  <main class="container phase-container" id="phase-1">
+    <div class="phase-header">
+      <h2>Phase 1</h2>
+    </div>
+
+    <div class="question-group" style="animation-delay: 0.1s;">
+      <label class="question-label" for="q1">1. What stream are you in, and which subjects do you actually study? (write freely)</label>
+      <textarea id="q1" class="question-input" placeholder="e.g. PCM, but I hate Physics. Love Math and Chemistry though."></textarea>
+    </div>
+
+    <div class="question-group" style="animation-delay: 0.2s;">
+      <label class="question-label" for="q2">2. What do you do outside of school? Hobbies, obsessions, things you watch or read — be specific</label>
+      <textarea id="q2" class="question-input" placeholder="e.g. I spend hours watching documentary series about true crime and how legal systems work across countries."></textarea>
+    </div>
+
+    <div class="question-group" style="animation-delay: 0.3s;">
+      <label class="question-label" for="q3">3. Have you thought about what you want to do after 12th? Write exactly what's in your head — even if it's confusion or a half-formed idea</label>
+      <textarea id="q3" class="question-input" placeholder="e.g. Lawyer, maybe? Or something in journalism. Not sure."></textarea>
+    </div>
+
+    <div class="form-actions" style="animation-delay: 0.4s; animation-fill-mode: both;">
+      <button class="btn" id="btn-phase-1">Analyse My Answers →</button>
+    </div>
+  </main>
+
+  <main class="container phase-container" id="phase-2" style="display: none;">
+    <div class="phase-header">
+      <h2>Phase 2: Let's dig deeper</h2>
+      <p style="color: var(--muted); margin-top: 0.5rem;">Based on what you shared, I want to understand you better:</p>
+    </div>
+
+    <div id="dynamic-questions-container">
+      <!-- Dynamic questions injected here by app.js -->
+    </div>
+
+    <div class="form-actions">
+      <button class="btn" id="btn-phase-2">Generate My PathReport →</button>
+    </div>
+  </main>
+
+  <!-- Loading State -->
+  <div class="loading-overlay" id="loader">
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="loading-text" id="loader-text">Reading your answers...</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
